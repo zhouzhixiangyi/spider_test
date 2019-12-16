@@ -19,8 +19,9 @@ db = client[MONGO_DB]
 # browser = webdriver.Chrome(options=chrome_options)
 
 browser = webdriver.Chrome()
-
 wait = WebDriverWait(browser,10)
+
+
 def search():
     print('正在搜索')
     try:
@@ -39,7 +40,7 @@ def search():
 def next_page(page_number):
     print('当前页数：',page_number)
     try:
-        inputs = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, '#mainsrp-pager > div > div > div > div.form > input')))
+        inputs = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, '#pnum')))
         submit = wait.until(
             EC.element_to_be_clickable((By.CSS_SELECTOR, '#mainsrp-pager > div > div > div > div.form > span.btn.J_Submit')))
         inputs.clear()
@@ -50,6 +51,7 @@ def next_page(page_number):
 
     except TimeoutException:
         return next_page(page_number)
+
 
 def get_products():
     wait.until(EC.presence_of_element_located((By.CSS_SELECTOR,'#mainsrp-itemlist .items .item')))
@@ -76,6 +78,7 @@ def save_to_mongo(result):
             print('存储到MONGODB成功！',result)
     except Exception:
         print('存储失败',result)
+
 
 def main():
     total = search()

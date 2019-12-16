@@ -4,6 +4,7 @@ import re
 import json
 from multiprocessing import Pool
 
+
 def get_one_page(url):
     try:
         ua = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36'
@@ -24,6 +25,7 @@ def get_one_page(url):
     except RequestException:
         return None
 
+
 def parse_one_page(html):
     pattern = re.compile('<dd>.*?board-index.*?>(\d+)</i>.*?data-src="(.*?)".*?name"><a.*?>(.*?)'
                          '</a>.*?star">(.*?)</p>.*?releasetime">(.*?)</p>.*?integer">(.*?)</i>'
@@ -38,6 +40,7 @@ def parse_one_page(html):
             'time': item[4].strip()[5:],
             'score': item[5] + item[6]
         }
+
 
 def write_to_file(content):
     with open('result.txt','a',encoding='utf-8') as f:
