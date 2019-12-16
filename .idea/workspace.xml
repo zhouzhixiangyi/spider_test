@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a06e7edd-95de-4510-aecc-81ca136ef423" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/spider_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/spider_test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MaoyanTop100/spider_demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/MaoyanTop100/spider_demo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/taobao_meishi/spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/taobao_meishi/spider.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/抛硬币.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,6 +39,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\PythonCode\PythonWeb\spider_test\img_spider" />
       <recent name="F:\PythonCode\PythonWeb\spider_test\2taobao" />
     </key>
   </component>
@@ -222,7 +218,7 @@
       <option name="presentableId" value="Default" />
       <updated>1575274002405</updated>
       <workItem from="1576216542061" duration="3670000" />
-      <workItem from="1576456739862" duration="4445000" />
+      <workItem from="1576456739862" duration="4816000" />
     </task>
     <servers />
   </component>
